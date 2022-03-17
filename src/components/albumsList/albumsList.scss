@@ -1,0 +1,127 @@
+@import "../../assets/styles/colors.scss";
+
+#albumsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 30px;
+
+  h2 {
+    width: 100%;
+    @media (max-width: 980px) {
+      font-size: 1.1em;
+    }
+  }
+
+  .albums {
+    background-color: #111010;
+    margin: 1% 0 1% 1%;
+    border-radius: 10px;
+    padding: 10px;
+    width: 15%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    min-height: auto;
+
+    @media (max-width: 1250px) {
+      width: 24%;
+    }
+
+    @media (max-width: 1150px) {
+      width: 32%;
+    }
+    @media (max-width: 767px) {
+      width: 49%;
+    }
+    @media (max-width: 580px) {
+      width: 49%;
+    }
+    @media (max-width: 360px) {
+      width: 100%;
+      margin: 10% 0 1% 1%;
+    }
+    &:hover {
+      background-color: $artist_background_color;
+      i {
+        opacity: 1;
+        bottom: 34%;
+      }
+    }
+
+    &.active {
+      i {
+        opacity: 1;
+        bottom: 34%;
+      }
+    }
+
+    figure {
+      margin: 5px;
+      overflow: hidden;
+      border-radius: 5px;
+
+      a {
+        display: block;
+      }
+
+      img {
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+
+    figcaption {
+      font-size: 0.7rem;
+      text-align: left;
+      line-height: 1.1rem;
+      text-transform: none;
+      letter-spacing: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-height: 50px;
+      p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+        text-transform: none;
+        letter-spacing: normal;
+        font-family: spotify-circular, Helvetica, Arial, sans-serif;
+        color: #6a6a6a;
+        margin: 0;
+      }
+    }
+
+    i {
+      width: 60px;
+      height: 60px;
+      background-color: $play_color;
+      border-radius: 50px;
+      font-size: 2rem;
+      color: $black;
+      position: absolute;
+      bottom: 30%;
+      left: 60%;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      transition: all 0.2s;
+      @media (max-width: 1600px) {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+        left: 60%;
+      }
+      @media (max-width: 767px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}

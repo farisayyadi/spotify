@@ -1,0 +1,7 @@
+GET https://api.spotify.com/v1/search?q=katy%20perry&type=artist HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer BQAb3o7EAMl7Tc2aeZNX6BqUNZpHL2G9jCdDOTct9JRDixX7DbrFzIPnw9gcpQsBuBtS-d78w1LTjv8cESs8QZhbKCGYsBsz6UaDNMEgZ0duIF3rIGt-2YO-T6bJvUm7VulT6Z60idSu4PLg1mgH06EVhXEIOD6TdDk
+
+###
+

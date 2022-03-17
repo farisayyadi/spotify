@@ -1,0 +1,107 @@
+@import "../../assets/styles/colors.scss";
+
+.header {
+  background-color: $header_background_color;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  padding: 5px;
+  @media (max-width: 380px) {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    .la-chevron-circle-left {
+      text-align: left;
+      float: left;
+    }
+    .la-chevron-circle-right {
+      text-align: right;
+      float: right;
+    }
+  }
+  input:focus {
+    outline: none;
+  }
+
+  i {
+    font-size: 1.8em;
+    margin: 1% 5px;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      color: $artist_font_color;
+    }
+  }
+
+  span {
+    width: 50%;
+    position: relative;
+    @media (max-width: 767px) {
+      width: 80%;
+    }
+    @media (max-width: 620px) {
+      width: 100%;
+    }
+
+    i {
+      position: absolute;
+      color: #1f1e1e;
+      top: 15px;
+      left: 10px;
+      @media (max-width: 1920px) {
+        left: 0px;
+      }
+      @media (max-width: 1350px) {
+        top: 10px;
+      }
+      @media (max-width: 380px) {
+        top: -5px;
+      }
+
+      &:last-child {
+        right: 50%;
+        font-size: 1em;
+        top: 20px;
+        left: unset;
+        @media (max-width: 1360px) {
+          right: 30%;
+          font-size: 1em;
+          top: 17px;
+          left: unset;
+        }
+        @media (max-width: 980px) {
+          right: 0;
+          top: 15px;
+        }
+        @media (max-width: 380px) {
+          top: 0px;
+        }
+      }
+    }
+
+    input {
+      width: 50%;
+      height: 40px;
+      border-radius: 20px;
+      margin: 2% 1%;
+      padding: 0px 5%;
+      border: none;
+      @media (max-width: 1360px) {
+        width: 70%;
+        padding: 0px 5% 0 8%;
+      }
+      @media (max-width: 1024px) {
+        width: 80%;
+        padding: 0px 5% 0 10%;
+      }
+      @media (max-width: 980px) {
+        width: 100%;
+        padding: 0px 5% 0 12%;
+        margin: 2% 0;
+      }
+    }
+  }
+}

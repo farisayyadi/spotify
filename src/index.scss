@@ -1,0 +1,28 @@
+@import "./assets/styles/colors.scss";
+
+body,
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15pt;
+  color: #fff;
+  background: $background_color;
+  margin: auto;
+  padding: 0;
+  direction: ltr;
+  scroll-behavior: smooth;
+  height: 100vh;
+  float: left;
+  width: 100%;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

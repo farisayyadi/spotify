@@ -1,0 +1,43 @@
+@import "../../assets/styles/colors.scss";
+
+#aside {
+  text-align: left;
+  height: calc(100vh - 15px);
+  width: 250px;
+  float: left;
+  background-color: $aside_background_color;
+  @media (max-width: 620px) {
+    width: 200px;
+  }
+  @media (max-width: 580px) {
+    display: none;
+  }
+  ul {
+    padding: 30px;
+    margin: 0;
+    @media (max-width: 480px) {
+      font-size: 0.8em;
+    }
+    li {
+      list-style-type: none;
+      cursor: pointer;
+      margin: 8px 0;
+      opacity: 0.6;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      i {
+        padding: 5%;
+      }
+      span {
+        font-size: 0.8em;
+        @media (max-width: 980px) {
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../assets/styles/colors.scss";
+
+#content {
+  width: calc(100vw - 250px);
+  height: calc(100vh - 170px);
+  text-align: justify;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @media (max-width: 620px) {
+    width: calc(100vw - 200px);
+  }
+  @media (max-width: 580px) {
+    width: calc(100vw - 0px);
+  }
+}
