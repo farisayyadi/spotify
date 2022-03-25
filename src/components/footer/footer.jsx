@@ -51,7 +51,7 @@ class Footer extends React.Component {
     const box = e.target.getBoundingClientRect();
     const boxLeft = box.left;
     const mouseLeft = parseInt(e.clientX);
-    const diff = mouseLeft - boxLeft;
+    let diff = mouseLeft - boxLeft;
     const boxWidth = parseInt(box.width);
 
     if (diff < 0) diff = 0;
@@ -77,11 +77,10 @@ class Footer extends React.Component {
 
   volumeHandler = () => {
     let newVolume = this.state.volume;
-    if (newVolume.percent == 0) {
-      newVolume.percent = 50;
-    } else {
-      newVolume.percent = 0;
-    }
+    newVolume.percent === 0
+      ? (newVolume.percent = 50)
+      : (newVolume.percent = 0);
+
     this.setState({
       volume: newVolume,
     });
@@ -116,7 +115,7 @@ class Footer extends React.Component {
     const box = e.target.getBoundingClientRect();
     const boxLeft = box.left;
     const mouseLeft = parseInt(e.clientX);
-    const diff = mouseLeft - boxLeft;
+    let diff = mouseLeft - boxLeft;
     const boxWidth = parseInt(box.width);
 
     if (diff < 0) diff = 0;
@@ -191,7 +190,7 @@ class Footer extends React.Component {
           <i className="las la-bars"></i>
           <i className="lab la-connectdevelop"></i>
 
-          {this.state.volume.percent == 0 && (
+          {this.state.volume.percent === 0 && (
             <i className="las la-volume-mute" onClick={this.volumeHandler}></i>
           )}
 
@@ -203,7 +202,7 @@ class Footer extends React.Component {
               ></i>
             )}
 
-          {this.state.volume.percent == 100 && (
+          {this.state.volume.percent === 100 && (
             <i className="las la-volume-up" onClick={this.volumeHandler}></i>
           )}
 

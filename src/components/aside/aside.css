@@ -1,0 +1,58 @@
+#aside {
+  text-align: left;
+  height: calc(100vh - 15px);
+  width: 250px;
+  float: left;
+  background-color: #111010;
+}
+
+@media (max-width: 620px) {
+  #aside {
+    width: 200px;
+  }
+}
+
+@media (max-width: 580px) {
+  #aside {
+    display: none;
+  }
+}
+
+#aside ul {
+  padding: 30px;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  #aside ul {
+    font-size: 0.8em;
+  }
+}
+
+#aside ul li {
+  list-style-type: none;
+  cursor: pointer;
+  margin: 8px 0;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#aside ul li:hover {
+  opacity: 1;
+}
+
+#aside ul li i {
+  padding: 5%;
+}
+
+#aside ul li span {
+  font-size: 0.8em;
+}
+
+@media (max-width: 980px) {
+  #aside ul li span {
+    font-size: 0.7em;
+  }
+}
+/*# sourceMappingURL=aside.css.map */

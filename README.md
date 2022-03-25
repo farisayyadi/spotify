@@ -1,3 +1,22 @@
+﻿First, place your token on the "App.js" page in line 12 of the "access_token"  and then run the project.
+
+In the search field, you can search for the name of the artist, and in the "Albums list" section, you can receive the list of albums, and by scrolling down, more albums will be loaded.
+
+Clicking on any of the albums will add that album to the "Recently played" section.
+
+In the "Recently Played" section, only our last 6 searches are displayed.
+The duplicate album will not be added to the "Recently Played" section, just, the selected album will be moved to the first of the "Recently Played" list
+
+If you get along reply while searching, your token will probably expire and you will need to get a new token and place it on the "App.js" page.
+
+This project is as responsive as possible.
+Line awesome is used for fonts.
+
+In the real project, the token should be in the backend, and the called endpoints should point to the services located in the project backend and website, not directly to the Spotify addresses (this project is placed on the App.js page, which is experimental). 
+
+The project is not fully compatible with Spotify due to lack of time as well as testing my abilities, and there are many differences in details.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

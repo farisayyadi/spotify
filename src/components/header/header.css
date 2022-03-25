@@ -1,0 +1,150 @@
+.header {
+  background-color: #111010;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 70px;
+  padding: 5px;
+}
+
+@media (max-width: 380px) {
+  .header {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .header .la-chevron-circle-left {
+    text-align: left;
+    float: left;
+  }
+  .header .la-chevron-circle-right {
+    text-align: right;
+    float: right;
+  }
+}
+
+.header input:focus {
+  outline: none;
+}
+
+.header i {
+  font-size: 1.8em;
+  margin: 1% 5px;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.header i:hover {
+  color: #6a6a6a;
+}
+
+.header span {
+  width: 50%;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .header span {
+    width: 80%;
+  }
+}
+
+@media (max-width: 620px) {
+  .header span {
+    width: 100%;
+  }
+}
+
+.header span i {
+  position: absolute;
+  color: #1f1e1e;
+  top: 15px;
+  left: 10px;
+}
+
+@media (max-width: 1920px) {
+  .header span i {
+    left: 0px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .header span i {
+    top: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header span i {
+    top: -5px;
+  }
+}
+
+.header span i:last-child {
+  right: 50%;
+  font-size: 1em;
+  top: 20px;
+  left: unset;
+}
+
+@media (max-width: 1360px) {
+  .header span i:last-child {
+    right: 30%;
+    font-size: 1em;
+    top: 17px;
+    left: unset;
+  }
+}
+
+@media (max-width: 980px) {
+  .header span i:last-child {
+    right: 0;
+    top: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header span i:last-child {
+    top: 0px;
+  }
+}
+
+.header span input {
+  width: 50%;
+  height: 40px;
+  border-radius: 20px;
+  margin: 2% 1%;
+  padding: 0px 5%;
+  border: none;
+}
+
+@media (max-width: 1360px) {
+  .header span input {
+    width: 70%;
+    padding: 0px 5% 0 8%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header span input {
+    width: 80%;
+    padding: 0px 5% 0 10%;
+  }
+}
+
+@media (max-width: 980px) {
+  .header span input {
+    width: 100%;
+    padding: 0px 5% 0 12%;
+    margin: 2% 0;
+  }
+}
+/*# sourceMappingURL=header.css.map */

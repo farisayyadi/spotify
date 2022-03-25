@@ -1,0 +1,15 @@
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo img {
+  max-width: 150px;
+  padding: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=logo.css.map */

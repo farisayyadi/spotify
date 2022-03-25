@@ -11,37 +11,32 @@ class Aside extends React.Component {
         title: "Home",
         page: "home",
         icon: "home",
-        path: "/",
       },
       {
         title: "Search",
         page: "search",
         icon: "search",
-        path: "/",
       },
       {
         title: "Your Library",
         page: "library",
         icon: "list",
-        path: "/",
       },
       {
         title: "Create Playlist",
         page: "playlist",
         icon: "folder-plus",
-        path: "/",
       },
       {
         title: "Liked Songs",
         page: "songs",
         icon: "heart",
-        path: "/",
       },
     ],
   };
 
   handleClick = (page) => {
-    this.props.action(page);
+    this.props.changePage(page);
   };
 
   render() {
@@ -55,7 +50,7 @@ class Aside extends React.Component {
               title={item.title}
               page={item.page}
               icon={item.icon}
-              action={this.handleClick}
+              changePage={this.handleClick}
             />
           ))}
         </ul>

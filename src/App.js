@@ -9,7 +9,7 @@ import "./App.scss";
 
 class App extends React.Component {
 
-  access_token = "BQC_zdmfNI1VAqgaXA9e2mq1s6wuwCuIrroPRPNrYdnJXzMmb-IytBnYi9wPCBmd3i9epFno8lhwiUkcKUVu-1EeNtwF2_AkghJNe0snHpbg4SNEg75bniLaO9wJ4x0U-g2FdQgJVerk_nNZeU7ttcPWFB5RWZtfysY";
+  access_token = "BQAhhuP4FP__fpuxgPKe9wEv7A_q4PsAK1fk55A_sEdcmnJZE_etrWHK1nlZ4yViL8N7kwaFz7thyr35iYmOj3cJGYT9fEENYtZpt74kZPQGd3VKPZywieaEFxX7g7QPAdHe29BM30FNEOWdnAR1vF_TjqjvXNGB3m0";
   headers = {
     'Authorization': `Bearer ${this.access_token}`,
     'Content-Type': 'application/json',
@@ -180,7 +180,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Aside action={this.handleAsideClick} />
+        <Aside changePage={this.handleAsideClick} />
         <Header
           page={this.state.currentPage}
           title={this.state.currentPage}
